@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { PORTFOLIO } from './mock-portfolio';
 import { Portfolio } from './portfolio';
+import { DataService } from '../data.service';
+
 
 
 @Component({
@@ -10,12 +12,17 @@ import { Portfolio } from './portfolio';
 })
 
 export class PortfolioComponent {
-
+  iconData: any;
   portfolio = PORTFOLIO;
   selectedPortfolio?: Portfolio;
-
+  constructor(private dataService: DataService) {}
   onSelect(portfolio: Portfolio): void {
     this.selectedPortfolio = portfolio;
+  }
+  ngOnInit() {
+    this.dataService.getIconData().subscribe(data => {
+      this.iconData = data;
+    });
   }
 }
 
