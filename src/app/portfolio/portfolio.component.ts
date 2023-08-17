@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import {  Portfolio } from '../portfolio';
-import {  PORTFOLIO } from '../mock-portfolio';
+import { PORTFOLIO } from './mock-portfolio';
+import { Portfolio } from './portfolio';
+
 
 @Component({
   selector: 'app-portfolio',
