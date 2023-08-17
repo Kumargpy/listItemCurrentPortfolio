@@ -16,13 +16,7 @@ export class AppComponent {
   portfolio = PORTFOLIO;
   portfolio2 = PORTFOLIO2;
   selectedPortfolio?: Portfolio;
-  constructor(private dataService: DataService) {}
-  ngOnInit() {
-    this.dataService.getIconData().subscribe(data => {
-      this.iconData = data;
-      console.log(this.iconData);
-    });
-  }
+ 
 }
 
 

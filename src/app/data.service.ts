@@ -6,9 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class DataService {
-  constructor(private http: HttpClient) {}
+  // constructor(private http: HttpClient) {}
 
-  getIconData(): Observable<any> {
-    return this.http.get<any>('https://jsonplaceholder.typicode.com/users');
-  }
+  // getIconData(): Observable<any> {
+  //   return this.http.get<any>('https://jsonplaceholder.typicode.com/users');
+  // }
 }

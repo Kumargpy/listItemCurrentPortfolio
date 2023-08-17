@@ -17,7 +17,7 @@ export class PortfolioComponent {
   iconData: any;  
   selectedPortfolio?: Portfolio;
   
-  constructor(private dataService: DataService) {}
+  // constructor(private dataService: DataService) {}
   onSelect(portfolio: Portfolio): void {
     this.selectedPortfolio = portfolio;
   }
