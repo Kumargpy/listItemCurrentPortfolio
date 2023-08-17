@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class IconComponent {
   @Input()
-iconUrl!: string;
+iconUrl: any;
   @Input()
-altText!: string;
+altText: any;
 }

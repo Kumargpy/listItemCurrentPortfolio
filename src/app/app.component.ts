@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { PORTFOLIO } from './portfolio/mock-portfolio';
+import { PORTFOLIO2 } from './portfolio/mock-portfolio';
+import { Portfolio } from './portfolio/portfolio';
+
 
 @Component({
   selector: 'app-root',
@@ -7,6 +11,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Current Portfolio';
+  iconData: any;
+  portfolio = PORTFOLIO;
+  portfolio2 = PORTFOLIO2;
+  selectedPortfolio?: Portfolio;
 }
 
 

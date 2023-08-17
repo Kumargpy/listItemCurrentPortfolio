@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IconComponent } from './portfolioIcon/icon.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { IconComponent } from './portfolioIcon/icon.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
