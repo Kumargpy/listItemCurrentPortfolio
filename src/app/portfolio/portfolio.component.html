@@ -1,0 +1,8 @@
+
+<div class="col" *ngFor="let portfolio of portfolio" > 
+<div class="portfolio-items" >
+  <div class="icon"><img src="{{portfolio.icon}}" alt="corporate" class="img-responsive"/></div>
+  <div class="detail">{{portfolio.content}}</div>
+  <div *ngIf="portfolio.values !== 0" class="">{{portfolio.values}} </div> 
+</div>
+</div>

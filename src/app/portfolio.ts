@@ -1,4 +1,4 @@
-export interface Hero {
+export interface Portfolio {
   icon:string;
   content:string;
   values:number;
