@@ -1,6 +1,8 @@
 export interface Hero {
-  id: number;
-  name: string;
+  icon:string;
+  content:string;
+  values:number;
+
 }
 
 
