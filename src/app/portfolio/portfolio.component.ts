@@ -21,11 +21,7 @@ export class PortfolioComponent {
   onSelect(portfolio: Portfolio): void {
     this.selectedPortfolio = portfolio;
   }
-  ngOnInit() {
-    // this.dataService.getIconData().subscribe(data => {
-    //   this.iconData = data;
-    // });
-  }
+ 
 }
 
 

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IconComponent } from './portfolioIcon/icon.component';
 import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DataService } from './data.service';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+   
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
